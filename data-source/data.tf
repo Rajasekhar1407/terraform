@@ -10,3 +10,11 @@ data "aws_ami" "ami_id" {
 # data "aws_vpc" "default" {
 #   default = true
 # }
+
+data "aws_route53_zone" "zone_id" {
+  name = "rajasekhar.online"
+}
+
+data "aws_security_group" "sg_name" {
+  name = "allow-everything"
+}
